@@ -5,22 +5,27 @@ pipeline {
                 maven 'Maven'
         }
         stages{
-            stage('build'){
+            stage('clean'){
                 steps {
-                 echo "buiiiiiiiiiiiiiii"
-                        bat "mvn install"
+                 echo "clean project"
+                 bat "mvn clean"
 
                 }
             }
             stage('Test'){
                 steps{ 
-                   echo "tes"
+                 echo "test project"
+                 bat "mvn test"
                         
                 }
             }
             stage('Deploy'){
                 steps {
-                 echo "dep" 
+                 echo "Deploy project"
+                 bat "mvn package"
+                 bat "mvn deploy"
+                        
+                        
                 }
             }
         }
