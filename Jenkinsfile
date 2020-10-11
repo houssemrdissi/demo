@@ -8,14 +8,14 @@ pipeline {
             stage('build'){
                 steps {
                  echo "buiiiiiiiiiiiiiii"
-                        sh "mvn clean -f demo"
+                        sh "mvn install"
 
                 }
             }
             stage('Test'){
                 steps{ 
                    echo "tes"
-                        sh "mvn install"
+                        
                 }
             }
             stage('Deploy'){
