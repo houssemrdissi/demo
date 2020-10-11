@@ -24,7 +24,6 @@ pipeline {
                  echo "Deploy project"
                  bat "mvn package"
                  bat "mvn deploy"
-                 bat "mvn sonar:sonar"
 
                         
                 }
