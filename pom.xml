@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tn.esprit</groupId>
   <artifactId>Jenkinstest</artifactId>
-  <version>1</version>
+  <version>2</version>
  <name>Jenkinstest</name>
   <description>Jenkinstest</description>
   <properties>
